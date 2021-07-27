@@ -1,1 +1,0 @@
-{"version":3,"sources":["page2.scss"],"names":[],"mappings":"AAAA;EACI,YAAY;EACZ,aAAa;EACb,eAAe,EAAA","file":"page2.css","sourcesContent":[".box3{\r\n    width: 500px;\r\n    height: 500px;\r\n    background: red;\r\n}"]}
