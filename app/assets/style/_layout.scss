@@ -1,0 +1,209 @@
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    @include deskmiddle{
+        width: 950px;
+    }
+    @include deskbelow{
+        width: 900px;
+    }
+    @include pad{
+        width: 690px;
+    }
+    @include iphone{
+        width: 520px;
+    }
+}
+.glassessLogo{
+    width: 80px;
+    height: 49px;
+    background: url("../images/glass-img/logo.png") no-repeat;
+    @include picture_replace_text;
+    a{
+    width: 80px;
+    height: 49px;
+    }
+}
+.header{
+    align-items: center;
+    background: $red;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 88px;
+    a{
+    font-size: 20px;
+    line-height: 30px;
+    }
+    @include pad{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    li{
+    margin-left: 64px;
+    }
+    @include iphone{
+        width: 100%;
+        padding-top: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        li{
+        margin: 0;
+        border: 1px solid #fff;
+        width: 50%;
+        text-align: center;
+        a{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        }
+    }
+}
+.footer{
+    background: $red;
+    h3{
+    color: #fff;
+    }
+}
+.footerLinker{
+    margin: 0 auto;
+    padding: 44px 0 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include iphone{
+    display: none;    
+    }
+}
+.footermenu{
+    display: flex;
+    li{
+    padding-right: 48px;
+    @include deskbelow{
+    padding-right: 32px;    
+    }
+    }
+    a{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+.footerLogo{
+    display: flex;
+    justify-content: space-between;
+    li{
+    padding-left: 32px;
+    @include deskbelow{
+    padding-left: 20px;   
+    }
+    }
+}
+.contact{
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    li{
+        display: flex;
+        align-items: center;
+    }
+    a{
+    font-size: 36px;
+    line-height: 54px;
+    }
+    img{
+    width: 36px;
+    height: 36px;
+    padding-right: 20px;
+    }
+    @include iphone{
+        display: none;
+    }
+}
+.policy_and_private{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0;
+    
+    @include iphone{
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    img{
+    width: 16px;
+    height: 16px;
+    padding-right: 6px;
+    }
+    h3{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: normal;
+        padding-bottom: 4px;
+        }
+    }
+}
+.policy_and_private_linker{
+    display: flex;
+    a{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-left: 48px;
+    }
+    @include iphone{
+    flex-direction: column;
+    }
+    a{
+    padding: 4px 0;
+    margin: 0;
+    }
+}
+
+.plocy_and_private_foriphone{
+    display: none;
+    @include iphone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 24px;
+    padding-top: 25px;
+    h3{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+        }
+    li{
+    display: flex;
+    align-items: center;
+    }
+    img{
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+    }
+}
+.footerLogo_foriphone{
+    @include iphone{
+        display: flex;
+        align-items: center;
+        li{
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            margin-left: 24px;
+            display: flex;
+        }
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
